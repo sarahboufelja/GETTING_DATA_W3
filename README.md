@@ -9,7 +9,7 @@ sarah boufelja
 ####boufelja.sarah@gmail.com
 ==================================================================
 
-The "run_analysis.R" takes as in input the .zip file from the UCI project for human activity project located in the following url: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and produces a tidy data set summarizing the mean of the some variables per activity and subject. 
+The "run_analysis.R" takes as in input the .zip file from the UCI project for human activity project located in the following url: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and produces a tidy data set summarizing the mean of some variables, per activity and per subject. 
 
 To run the script, you should first download and place the previous zip file in your R directory. 
 
