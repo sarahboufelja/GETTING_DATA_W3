@@ -4,9 +4,7 @@ W3 assignment of getting data course
 SCRIPT FOR CONVERTING THE "Human Activity Recognition Using Smartphones Dataset" RAW DATA
 INTO TIDY DATA SET. 
 Version 1.0
-==================================================================
-sarah boufelja
-boufelja.sarah@gmail.com
+
 ==================================================================
 
 The "run_analysis.R" takes as in input the .zip file from the UCI project for human activity project located in the following url: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and produces a tidy data set summarizing the mean of some variables, per activity and per subject. 
