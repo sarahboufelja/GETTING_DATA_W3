@@ -1,0 +1,174 @@
+====================================================================
+## Experimental Design (Courtesy of [1])
+===================================================================
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 
+3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been 
+video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% 
+of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in 
+fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which 
+has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration 
+and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz 
+cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time 
+and frequency domain
+====================================================================
+## Code Book
+===================================================================
+The tidy data set dimension is: 180x88 
+The tidy data set contains the following columns:
+activity_labels: a character string representing the activity being analyzed. The experiment studied six activities (WALKING,
+WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,LAYING,SITTING,STANDING)
+subject: an integer from 1 to 30 representing the subject conducting the experiment 
+tBodyAcc-mean()-X: a numeric representing the average of the mean of the temporal linear body acceleration on the X axis 
+for a given activity and a given subject
+tBodyAcc-mean()-Y:  a numeric representing the average of the mean of the temporal linear body acceleration on the Y axis 
+for a given activity and a given subject
+tBodyAcc-mean()-Z: a numeric representing the average of the mean of the temporal linear body acceleration on the Z axis 
+for a given activity and a given subject
+tGravityAcc-mean()-X: a numeric representing the average of the mean of the temporal gravitational acceleration on the X axis 
+for a given activity and a given subject
+tGravityAcc-mean()-Y: a numeric representing the average of the mean of the temporal gravitational acceleration on the Y axis 
+for a given activity and a given subject
+tGravityAcc-mean()-Z: a numeric representing the average of the mean of the temporal gravitational acceleration on the Z axis 
+for a given activity and a given subject
+tBodyAccJerk-mean()-X: a numeric representing the average of the mean of the temporal jerk linear body acceleration on the X axis 
+for a given activity and a given subject
+tBodyAccJerk-mean()-Y: a numeric representing the average of the mean of the temporal jerk linear body acceleration on the Y axis 
+for a given activity and a given subject
+tBodyAccJerk-mean()-Z: a numeric representing the average of the mean of the temporal jerk linear body acceleration on the Z
+axis for a given activity and a given subject
+tBodyGyro-mean()-X: a numeric representing the average of the mean of the temporal angular body acceleration on the X axis 
+for a given activity and a given subject
+tBodyGyro-mean()-Y: a numeric representing the average of the mean of the temporal angular body acceleration on the Y axis 
+for a given activity and a given subject
+tBodyGyro-mean()-Z: a numeric representing the average of the mean of the temporal angular body acceleration on the Z axis 
+for a given activity and a given subject
+tBodyGyroJerk-mean()-X: a numeric representing the average of the mean of the temporal jerk angular body acceleration on the 
+X axis for a given activity and a given subject
+tBodyGyroJerk-mean()-Y: a numeric representing the average of the mean of the temporal jerk angular body acceleration on the 
+Y axis for a given activity and a given subject
+tBodyGyroJerk-mean()-Z: a numeric representing the average of the mean of the temporal jerk angular body acceleration on the 
+Z axis for a given activity and a given subject
+tBodyAccMag-mean(): a numeric representing the average of the mean of the temporal body acceleration magnitude for a given 
+activity and a given subject
+tGravityAccMag-mean(): a numeric representing the average of the mean of the temporal gravitational acceleration magnitude 
+for a given activity and a given subject
+tBodyAccJerkMag-mean(): a numeric representing the average of the mean of the temporal body's acceleration magnitude for a given 
+activity and a given subject
+tBodyGyroMag-mean(): a numeric representing the average of the mean of the temporal body's angular acceleration magnitude for a given 
+activity and a given subject
+tBodyGyroJerkMag-mean(): a numeric representing the average of the mean of the temporal body's angular acceleration magnitude for a 
+activity and a given subject
+fBodyAcc-mean()-X:a a numeric representing the average of the mean of the body's frequency linear acceleration magnitude for a 
+activity and a given subject on the X axis
+fBodyAcc-mean()-Y:a numeric representing the average of the mean of the body's FFT-transform linear acceleration magnitude for a 
+activity and a given subject on the Y axis
+fBodyAcc-mean()-Z:a numeric representing the average of the mean of the body's FFT-transform linear acceleration magnitude for a 
+activity and a given subject on the Z axis
+fBodyAcc-meanFreq()-X: a numeric representing the average of the mean of the body's FFT-transform linear acceleration magnitude for a 
+activity and a given subject on the X axis
+fBodyAcc-meanFreq()-Y: a numeric representing the average of the mean of the body's FFT-transform linear acceleration magnitude for a 
+activity and a given subject on the Y axis
+fBodyAcc-meanFreq()-Z: a numeric representing the average of the mean of the body's FFT-transform linear acceleration magnitude for a 
+activity and a given subject on the Z axis
+fBodyAccJerk-mean()-X: a numeric representing the average of the mean of the body's FFT-transform jerk linear acceleration magnitude for a 
+activity and a given subject on the X axis
+fBodyAccJerk-mean()-Y: a numeric representing the average of the mean of the body's FFT-transform jerk linear acceleration magnitude for a 
+activity and a given subject on the Y axis
+fBodyAccJerk-mean()-Z: a numeric representing the average of the mean of the body's FFT-transform jerk linear acceleration magnitude for a 
+activity and a given subject on the Z axis
+fBodyAccJerk-meanFreq()-X: a numeric representing the average of the mean of the body's FFT-transform jerk linear acceleration magnitude for a 
+activity and a given subject on the X axis
+fBodyAccJerk-meanFreq()-Y:a numeric representing the average of the mean of the body's FFT-transform jerk linear acceleration magnitude for a 
+activity and a given subject on the Y axis
+fBodyAccJerk-meanFreq()-Z:a numeric representing the average of the mean of the body's FFT-transform jerk linear acceleration magnitude for a 
+activity and a given subject on the Z axis
+fBodyGyro-mean()-X: a numeric representing the average of the mean of the body's FFT-transform angular acceleration magnitude for a 
+activity and a given subject on the X axis
+fBodyGyro-mean()-Y:a numeric representing the average of the mean of the body's FFT-transform angular acceleration magnitude for a 
+activity and a given subject on the Y axis
+fBodyGyro-mean()-Z:a numeric representing the average of the mean of the body's FFT-transform angular acceleration magnitude for a 
+activity and a given subject on the Z axis
+fBodyGyro-meanFreq()-X: a numeric representing the average of the mean of the body's FFT-transform angular acceleration magnitude for a 
+activity and a given subject on the X axis
+fBodyGyro-meanFreq()-Y:a numeric representing the average of the mean of the body's FFT-transform angular acceleration magnitude for a 
+activity and a given subject on the Y axis
+fBodyGyro-meanFreq()-Z:a numeric representing the average of the mean of the body's FFT-transform angular acceleration magnitude for a 
+activity and a given subject on the Z axis
+fBodyAccMag-mean(): a numeric representing the average of the mean of the body's FFT-Transform linear acceleration magnitude 
+for a given activity and a given subject
+fBodyAccMag-meanFreq(): a numeric representing the average of the mean of the body's FFT-Transform linear acceleration magnitude 
+for a given activity and a given subject
+fBodyBodyAccJerkMag-mean(): a numeric representing the average of the mean of the FFT-transform body's jerk acceleration magnitude for a given 
+activity and a given subject
+fBodyBodyAccJerkMag-meanFreq():a numeric representing the average of the mean of the FFT-transform body's jerk acceleration magnitude for a given 
+activity and a given subject
+fBodyBodyGyroMag-mean():a numeric representing the average of the mean of the FFT-transform body's angular acceleration magnitude for a given 
+activity and a given subject
+fBodyBodyGyroMag-meanFreq(): a numeric representing the average of the mean of the FFT-transform body's angular acceleration magnitude for a given 
+activity and a given subject
+fBodyBodyGyroJerkMag-mean():a numeric representing the average of the mean of the FFT-transform body's jerk angular acceleration magnitude for a given 
+activity and a given subject
+fBodyBodyGyroJerkMag-meanFreq(): a numeric representing the average of the mean of the FFT-transform body's jerk acceleration magnitude for a given 
+activity and a given subject
+angle(tBodyAccMean,gravity): a numeric representing the average of the angle between the body's temporal linear acceleration and the gravity
+angle(tBodyAccJerkMean),gravityMean): a numeric representing the average of the angle between the body's temporal linear acceleration and the gravity's mean
+angle(tBodyGyroMean,gravityMean): a numeric representing the average of the angle between the body's temporal angular acceleration and the gravity's mean
+angle(tBodyGyroJerkMean,gravityMean): a numeric representing the average of the angle between the body's temporal angular jerk acceleration and the gravity's mean
+angle(X,gravityMean): a numeric representing the average of the angle of the gravity's mean on the X axis
+angle(Y,gravityMean): a numeric representing the average of the angle of the gravity's mean on the Y axis
+angle(Z,gravityMean): a numeric representing the average of the angle of the gravity's mean on the Z axis
+tBodyAcc-std()-X: a numeric representing the average of standard deviation of body's temporal acceleration on the X axis
+tBodyAcc-std()-Y: a numeric representing the average of standard deviation of body's temporal acceleration on the Y axis
+tBodyAcc-std()-Z: a numeric representing the average of standard deviation of body's temporal acceleration on the Z axis
+tGravityAcc-std()-X: a numeric representing the average of the std of the temporal gravitational acceleration on the X axis 
+for a given activity and a given subject
+tGravityAcc-std()-Y: a numeric representing the average of the std of the temporal gravitational acceleration on the Y axis 
+for a given activity and a given subject
+tGravityAcc-std()-Z: a numeric representing the average of the std of the temporal gravitational acceleration on the Z axis 
+for a given activity and a given subject
+tBodyAccJerk-std()-X: a numeric representing the average of the std of the body's temporal linear jerk acceleration on the X axis 
+for a given activity and a given subject
+tBodyAccJerk-std()-Y: a numeric representing the average of the std of the body's temporal linear jerk acceleration on the Y axis 
+for a given activity and a given subject
+tBodyAccJerk-std()-Z: a numeric representing the average of the std of the body's temporal linear jerk acceleration on the Z axis 
+for a given activity and a given subject
+tBodyGyro-std()-X: a numeric representing the average of the std of the body's gravitational acceleration on the X axis 
+for a given activity and a given subject
+tBodyGyro-std()-Y:a numeric representing the average of the std of the body's gravitational acceleration on the Y axis 
+for a given activity and a given subject
+tBodyGyro-std()-Z:a numeric representing the average of the std of the body's gravitational acceleration on the Z axis 
+for a given activity and a given subject
+tBodyGyroJerk-std()-X: a numeric representing the average of the std of the body's gravitational jerk acceleration on the X axis 
+for a given activity and a given subject
+tBodyGyroJerk-std()-Y: a numeric representing the average of the std of the body's gravitational jerk acceleration on the Y axis 
+for a given activity and a given subject
+tBodyGyroJerk-std()-Z: a numeric representing the average of the std of the body's gravitational jerk acceleration on the Z axis 
+for a given activity and a given subject
+tBodyAccMag-std(): a numeric representing the average of the std of the body's linear acceleration magnitude for a given activity and a given subject
+tGravityAccMag-std():a numeric representing the average of the std of the body's gravitational acceleration magnitude for a given activity and a given subject
+tBodyAccJerkMag-std(): a numeric representing the average of the std of the body's linear jerk acceleration magnitude for a given activity and a given subject
+tBodyGyroMag-std():a numeric representing the average of the std of the body's angular acceleration magnitude for a given activity and a given subject
+tBodyGyroJerkMag-std():a numeric representing the average of the std of the body's angular jerk acceleration magnitude for a given activity and a given subject
+fBodyAcc-std()-X:a numeric representing the average of the std of the body's FFT-transform linear acceleration magnitude for a given activity and a given subject on the X axis
+fBodyAcc-std()-Y:a numeric representing the average of the std of the body's FFT-transform linear acceleration magnitude for a given activity and a given subject on the Y axis
+fBodyAcc-std()-Z:a numeric representing the average of the std of the body's FFT-transform linear acceleration magnitude for a given activity and a given subject on the Z axis
+fBodyAccJerk-std()-X: a numeric representing the average of the std of the body's FFT-transform linear jerk acceleration magnitude for a given activity and a given subject on the X axis
+fBodyAccJerk-std()-Y:a numeric representing the average of the std of the body's FFT-transform linear jerk acceleration magnitude for a given activity and a given subject on the Y axis
+fBodyAccJerk-std()-Z:a numeric representing the average of the std of the body's FFT-transform linear jerk acceleration magnitude for a given activity and a given subject on the Z axis
+fBodyGyro-std()-X:a numeric representing the average of the std of the body's FFT-transform angular acceleration  for a given activity and a given subject on the X axis
+fBodyGyro-std()-Y: a numeric representing the average of the std of the body's FFT-transform angular acceleration  for a given activity and a given subject on the Y axis
+fBodyGyro-std()-Z:a numeric representing the average of the std of the body's FFT-transform angular acceleration for a given activity and a given subject on the Z axis
+fBodyAccMag-std():a numeric representing the average of the std of the body's FFT-transform linear acceleration magnitude for a given activity and a given subject 
+fBodyBodyAccJerkMag-std():a numeric representing the average of the std of the body's FFT-transform linear jerk acceleration magnitude for a given activity and a given subject
+fBodyBodyGyroMag-std():a numeric representing the average of the std of the body's FFT-transform angular acceleration magnitude for a given activity and a given subject
+fBodyBodyGyroJerkMag-std():a numeric representing the average of the std of the body's FFT-transform angular jerk cceleration magnitude for a given activity and a given subject
+
+
+==============================================================================================
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly 
+
+Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
